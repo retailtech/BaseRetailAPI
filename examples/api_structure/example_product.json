@@ -1,0 +1,19 @@
+{
+  "form": {
+    "resource": "resource-cluster_resource",
+    "methods": ["GET", "POST", "PUT", "DELETE"],
+    "url": "https://api.domaine.name/resource_cluster/resource/:id",
+    "parameters": {"id": 3, "params": {"param1": "data", "param2": "data"}},
+    "header": {"header1": "element1", "header2": "element2"},
+    "remove_field": {"get": ["password"]}
+  },
+  
+  "data": {
+    "resource": "data-schemas_product",
+    "methods": ["GET", "POST", "PUT", "DELETE"],
+    "url": "https://example.domaine.name/data_schemas/product/:id",
+    "parameters": {"id": 3, "params": {"param1": "data", "param2": "data"}},
+    "header": {"header1": "element1", "header2": "element2"},
+    "remove_field": {"get": ["id"]}
+  }
+}

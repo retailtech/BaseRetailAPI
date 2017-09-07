@@ -1,0 +1,32 @@
+{
+    "id": "unique integer auto-increment*",
+    "personnal_data": {
+        "names": {
+            "firstname": "string*",
+            "lastname": "string*",
+            "midlenames": ["string"]
+        },
+        "addesses" : [{
+            "address1": "string",
+            "address2": "string",
+            "zipcode": "int",
+            "city": "string",
+            "country": "string"
+        }],
+        "birthdate": "dd-mm-YYYY HH:ii:ss*",
+        "gender": "string",    
+    },
+    "work_data": {
+        "company_id": "integer",
+        "employ": {
+            "field": "string*",
+            "position": "string*",
+            "arrival_date": "jj-mm-YYY HH:ii:ss"
+        },
+        "related_employees": {
+            "collegues_ids": ["integer"],
+            "superior_id": "integer",
+            "subordinates_ids": ["integer"]
+        }
+    }
+}

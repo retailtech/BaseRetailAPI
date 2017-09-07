@@ -1,0 +1,128 @@
+{ 
+  "data_form": {
+    "object_data": {
+      "id": "string",
+      "createdAt": "date",
+      "updatedAt": "date",
+      "disabled": "boolean",
+      "disabledAt": "date",
+      "disabledTo": "date",
+      "archived": "boolean",
+      "archivedAt": "date"
+    },
+    "other_products": {
+      "substitutes": [{
+        "object_name": "product"
+      }],
+      "isEquivalentTo": [{
+        "object_name": "product"
+      }],
+      "isReplaceableBy": [{
+        "object_name": "product"
+      }],
+      "associations": [{
+        "object_name": "product"
+      }]
+    },
+    "assets": {
+      "object_name": "asset"
+    },
+    "reviewsId": ["integer"],
+    "productPage_url": "string",
+    "description": "string",
+    "legalName": [{
+      "expressedIn": {
+        "normalizedCode": "fr",
+        "code": "fra-FR",
+        "description": "français",
+        "label": "français"
+      },
+      "name": "string"
+    }],
+    "prices": [{
+      "price": "integer",
+      "currency": "string",
+      "from": "date",
+      "to": "date",
+      "sold": [{
+        "from": "date",
+        "to": "date",
+        "percent": "integer",
+        "strict": "integer"
+      }]
+    }],
+    "tags": [{
+      "name": "string",
+      "expressedIn": {
+        "normalizedCode": "string 2char",
+        "code": "string 3-2char",
+        "description": "string",
+        "label": "string"
+      },
+    }],
+    "brand": {"object_name": "brand"},
+    "families": [{
+      "object_name": "family"
+    }],
+  },
+  
+  "data_example": {
+      "object_data": {
+        "id": "1337",
+        "createdAt": "2016-11-29T07:56:33+02:00",
+        "updatedAt": "2017-04-22T16:24:51-05:00",
+        "disabled": "true",
+        "disabledAt": "2017-05-14T16:48:22+02:00",
+        "disabledTo": "2017-06-01T00:00:00+02:00",
+        "archived": "false",
+        "archivedAt": null,
+      },
+      "other_products": {
+        "substitutes": [{}],
+        "isEquivalentTo": [{}],
+        "isReplaceableBy": [{}],
+        "associations": [{}]
+      },
+      "assets": {
+        "object_name": "asset"
+      },
+      "reviewsId": [15, 42, 137],
+      "productPage_url": "https://www.example.com/folder/product/:id",
+      "legalName": [{
+        "expressedIn": {
+          "normalizedCode": "fr",
+          "code": "fra-FR",
+          "description": "français",
+          "label": "français"
+        },
+        "name": "The product"
+      }],
+      "description": "This is the description of The product",
+      "prices": [{
+        "price": "50",
+        "currency": "euros",
+        "from": "2017-02-14T00:00:00+02:00",
+        "to": "2017-05-14T00:00:00+02:00",
+        "sold": [{
+          "from": "2017-05-01T00:00:00+02:00",
+          "to": "2017-05-14T00:00:00+02:00",
+          "percent": "20",
+          "strict": "10"
+        }]
+      }],
+      "tags": [{
+        "name": "example",
+        "expressedIn": {
+          "normalizedCode": "fr",
+          "code": "fra-FR",
+          "description": "français",
+          "label": "français"
+        },
+      }],
+      "brand": {"object_name": "brand"},
+      "families": [{
+        "object_name": "family"
+      }],
+    }
+  }
+}
